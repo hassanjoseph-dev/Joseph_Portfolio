@@ -532,3 +532,28 @@ a {
   fill:#fff;
   transform:scale(1.08);
 }
+
+.when.none{opacity:.7}
+.actions{display:flex;gap:.5rem;margin-left:auto;flex:none}
+.actions .del{margin-left:0}
+.edit{font:inherit;font-size:.85rem;font-weight:700;background:transparent;color:#fff;border:1px solid rgba(255,255,255,.28);border-radius:8px;padding:.3rem .75rem;cursor:pointer;transition:background .2s,border-color .2s}
+.edit:hover{background:rgba(255,255,255,.1);border-color:#fff}
+.task.editing{flex-wrap:wrap}
+.task.editing>:not(.editor){display:none}
+.editor{display:flex;flex:1 1 100%;flex-wrap:wrap;align-items:center;gap:.6rem}
+.task .editor input,.task .editor select{height:auto;width:auto;flex:0 0 auto;font:inherit;font-weight:600;color:#fff;background:var(--s1);padding:.6rem .8rem;border:1.5px solid #34343B;border-radius:10px;color-scheme:dark;cursor:auto}
+.task .editor input[type=text]{flex:1 1 200px;min-width:0}
+.task .editor select option{background:#111114}
+.task .editor input:focus,.task .editor select:focus{outline:none;border-color:var(--red2);box-shadow:0 0 0 4px rgba(225,29,46,.3)}
+.editor .btn{padding:.55rem 1.1rem}
+.editor .err{flex:1 1 100%;margin:0}
+.remind{display:flex;flex-wrap:wrap;align-items:center;gap:.8rem;margin:.4rem 0 1.4rem}
+.remind .btn{padding:.5rem 1.1rem;font-size:.9rem}
+.remind .note{margin:0;flex:1 1 260px}
+.toasts{position:fixed;right:1rem;bottom:1rem;z-index:90;display:grid;gap:.7rem;width:min(360px,calc(100% - 2rem))}
+.toast{background:rgba(17,17,20,.96);border:1px solid rgba(255,59,74,.6);border-left:4px solid var(--red);border-radius:14px;padding:1rem 1.1rem;box-shadow:0 20px 50px rgba(0,0,0,.55);animation:rise .3s both}
+.toast p{margin:0 0 .8rem;color:#fff;max-width:none}
+.toast-actions{display:flex;gap:.5rem}
+.toast-actions button{font:inherit;font-size:.85rem;font-weight:700;border-radius:8px;padding:.35rem .8rem;cursor:pointer;color:#fff;background:transparent;border:1px solid rgba(255,255,255,.28)}
+.toast-actions .primary{background:var(--red);border-color:var(--red)}
+@media (max-width:560px){.actions{order:2}}
