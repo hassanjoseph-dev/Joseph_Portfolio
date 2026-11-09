@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Academic Planner | Hassan Ore-Oluwa Joseph</title>
+<meta name="description" content="An interactive academic planner: add, complete and delete tasks.">
+<meta name="theme-color" content="#0A0A0B">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;700&amp;display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="pg-planner">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+<nav class="nav" aria-label="Main navigation">
+<a class="brand" href="index.html">Hassan Joseph<b>.</b></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Toggle menu"><span class="bars" aria-hidden="true"></span></button>
+<ul id="menu"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a href="planner.html" aria-current="page">Planner</a></li><li><a href="contact.html">Contact</a></li></ul>
+</nav>
+</header>
+<main id="main">
+<section class="dash"><div class="wrap">
+<div class="dash-top">
+<div><h1>My Academic Planner</h1><p>Use this planner to organise academic tasks, assignments, projects, examinations and other important activities. Add a task, mark it as completed when finished, or delete it when it is no longer required.</p></div>
+<div class="stats">
+<div class="ring" role="progressbar" aria-label="Tasks completed" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><svg viewBox="0 0 120 120" aria-hidden="true"><circle class="trk" cx="60" cy="60" r="52"/><circle class="val" id="ring" cx="60" cy="60" r="52"/></svg><strong id="pct">0%</strong></div>
+<ul class="tiles"><li><b id="sTotal">0</b><span>Total</span></li><li><b id="sDone">0</b><span>Done</span></li><li><b id="sLeft">0</b><span>To do</span></li></ul>
+</div>
+</div>
+<p id="count" class="count">0 of 7 tasks completed (0%)</p>
+<div class="card planner">
+<form id="taskForm" novalidate>
+<label for="taskInput">Add a new task</label>
+<div class="add"><input id="taskInput" type="text" maxlength="120" placeholder="Enter an academic task..." autocomplete="off"><button class="btn" type="submit">Add task</button></div>
+<p id="taskError" class="err" role="alert"></p>
+</form>
+<h2>Your tasks</h2>
+<ul id="taskList" class="tasks"></ul>
+<p id="empty" hidden>No tasks yet. Add your first task above.</p>
+<p class="note">Tasks are saved in this browser, so they are still here when you come back.</p>
+</div>
+</div></section>
+</main>
+<footer class="site-footer">
+<div class="wrap foot">
+<p>&copy; <span id="year">2026</span> Hassan Ore-Oluwa Joseph. MIVA Open University.</p>
+<ul><li><a href="https://github.com/hassanjoseph-dev" target="_blank" rel="noopener">GitHub</a></li><li><a href="mailto:h.ore-oluwa5593@miva.edu.ng">Email</a></li><li><a href="contact.html">Contact</a></li></ul>
+</div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
