@@ -36,7 +36,7 @@
 <div class="card planner">
 <form id="taskForm" novalidate>
 <label for="taskInput">Add a new task</label>
-<div class="add"><input id="taskInput" type="text" maxlength="120" placeholder="Enter an academic task..." autocomplete="off"><button class="btn" type="submit">Add task</button></div>
+<div class="add"><input id="taskInput" type="text" maxlength="120" placeholder="Enter an academic task..." autocomplete="off"><input id="taskDate" type="date" aria-label="Due date"><input id="taskTime" type="time" aria-label="Due time"><select id="taskPriority" aria-label="Priority"><option value="low">Low</option><option value="normal" selected>Normal</option><option value="high">High</option></select><button class="btn" type="submit">Add task</button></div>
 <p id="taskError" class="err" role="alert"></p>
 </form>
 <h2>Your tasks</h2>
