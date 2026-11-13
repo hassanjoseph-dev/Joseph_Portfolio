@@ -1,91 +1,499 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Projects | Hassan Ore-Oluwa Joseph</title>
-<meta name="description" content="Cybersecurity labs, a solar inverter installation report and web development projects by Hassan Ore-Oluwa Joseph.">
-<meta name="theme-color" content="#0A0A0B">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="icon" href="favicon-32x32.png" sizes="32x32" type="image/png">
-<link rel="shortcut icon" href="favicon.ico">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;700&amp;display=swap">
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects | Hassan Ore-Oluwa Joseph</title>
+  <meta name="description" content="Cybersecurity labs, a solar inverter installation report and web development projects by Hassan Ore-Oluwa Joseph.">
+  <meta name="theme-color" content="#0A0A0B">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;700&amp;display=swap">
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body class="pg-projects">
-<a class="skip" href="#main">Skip to content</a>
-<header class="site-header">
-<nav class="nav" aria-label="Main navigation">
-<a class="brand" href="index.html">Hassan Joseph<b>.</b></a>
-<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Toggle menu"><span class="bars" aria-hidden="true"></span></button>
-<ul id="menu"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html" aria-current="page">Projects</a></li><li><a href="planner.html">Planner</a></li><li><a href="contact.html">Contact</a></li></ul>
-</nav>
-</header>
-<main id="main">
-<header class="page-head"><div class="wrap"><h1>My projects</h1><p>Hands-on work across cybersecurity, renewable energy and web development.</p><div class="filters" role="group" aria-label="Filter projects"><button class="on" type="button" data-f="all">All</button><button type="button" data-f="security">Cybersecurity</button><button type="button" data-f="energy">Solar energy</button><button type="button" data-f="web">Web</button></div></div></header>
-<section><div class="wrap"><article class="hub" id="ethical-hacking">
-<div class="hub-head">
-<div>
-<h2>Ethical hacking</h2>
-<p>Everything I have done under ethical hacking, in one container: the hands-on scanning lab I ran myself, and the study notes behind it. Open any item to see the details.</p>
-<ul class="tags"><li>Nmap</li><li>hping3</li><li>theHarvester</li><li>Google dorking</li><li>Kali Linux</li><li>Parrot OS</li><li>VMware</li></ul>
-<div class="links"><a class="btn dark" href="assets/docs/google-hacking-lab.pdf" target="_blank" rel="noopener">Read the lab report (PDF)</a></div>
-</div>
-<img class="hub-img" src="assets/img/cyber/02-security-analyst-at-work.jpg" width="678" height="452" alt="A security analyst working across two laptops and a monitor showing code and dashboards">
-</div>
-<p class="callout">The first item is my own lab work. The other items are study notes that use reference images from public sources, credited where the source is visible.</p>
-<div class="accordion"><details class="item" open><summary><span>Lab: reconnaissance and network scanning</span><span class="badge own">My own work</span></summary><div class="item-body"><p>Hands-on labs from my ethical hacking training, run on virtual machines in an isolated lab: a Parrot OS attacker against Windows 10 and Windows Server 2016 targets. I gathered information with advanced Google dorking and theHarvester, mapped the target with an Nmap TCP connect scan, and crafted ACK probes with hping3.</p>
-<p>The full lab report also covers FTP search engines, Netcraft, Sherlock, deep and dark web searching, passive OS footprinting, and OS discovery with the Nmap script engine and Uniscan.</p>
-<div class="gallery"><figure><a href="assets/img/lab-google-dorking.png" target="_blank" rel="noopener"><img src="assets/img/lab-google-dorking.png" width="858" height="750" alt="Google search using the intitle and site operators against eccouncil.org" loading="lazy"></a><figcaption>Google dorking with intitle: and site: operators</figcaption></figure><figure><a href="assets/img/lab-theharvester.png" target="_blank" rel="noopener"><img src="assets/img/lab-theharvester.png" width="638" height="627" alt="theHarvester 4.0.3 banner in a Parrot OS terminal" loading="lazy"></a><figcaption>theHarvester 4.0.3 running on Parrot OS</figcaption></figure><figure><a href="assets/img/lab-nmap-scan.png" target="_blank" rel="noopener"><img src="assets/img/lab-nmap-scan.png" width="805" height="775" alt="Zenmap showing a TCP connect scan with a list of open ports on 10.10.10.16" loading="lazy"></a><figcaption>Nmap TCP connect scan listing open ports</figcaption></figure><figure><a href="assets/img/lab-hping3.png" target="_blank" rel="noopener"><img src="assets/img/lab-hping3.png" width="705" height="577" alt="Parrot terminal showing hping3 ACK probes to port 80 with five replies" loading="lazy"></a><figcaption>hping3 ACK probes against port 80</figcaption></figure></div></div></details><details class="item"><summary><span>My learning roadmap</span><span class="badge">Study notes</span></summary><div class="item-body cy"><div class="split"><div>
-<p>I am building security skills from the foundations up, because every later step depends on the one before it.</p>
-<ol class="steps">
-<li><h3>Networking</h3><p>How devices find and talk to each other: IP addresses, protocols and ports.</p></li>
-<li><h3>Cybersecurity fundamentals</h3><p>Confidentiality, integrity and availability, common threats, and how defences work.</p></li>
-<li><h3>Ethical hacking</h3><p>Testing systems with permission to find weaknesses before attackers do. This is the stage I am training in now.</p></li>
-<li><h3>Advanced security specialisations</h3><p>Deeper tracks such as penetration testing, digital forensics and security operations.</p></li>
-</ol></div><figure><a href="assets/img/cyber/01-learning-roadmap.jpg" target="_blank" rel="noopener"><img src="assets/img/cyber/01-learning-roadmap.jpg" width="683" height="1024" alt="Roadmap flowchart: Networking, then Cybersecurity Fundamentals, then Ethical Hacking, then Advanced Security Specializations" loading="lazy"></a><figcaption>Roadmap from networking to advanced specialisations</figcaption></figure></div></div></details><details class="item"><summary><span>The five phases of ethical hacking</span><span class="badge">Study notes</span></summary><div class="item-body cy"><p>A professional security test follows the same order an attacker would, so the tester finds the weaknesses an attacker would find. Each phase feeds the next, and the cycle repeats as systems change.</p>
-<ol class="phases">
-<li><h3>Reconnaissance</h3><p>Gather information about the target from public sources or by probing it directly. I practised this with Google dorking and theHarvester.</p></li>
-<li><h3>Scanning and enumeration</h3><p>Find live hosts, open ports and the services behind them. I practised this with Nmap and hping3.</p></li>
-<li><h3>Gaining access</h3><p>Use a weakness found in the scan to enter the system, only inside the agreed scope, to prove the risk is real.</p></li>
-<li><h3>Maintaining access</h3><p>Check whether a foothold could last, so defenders know what to look for.</p></li>
-<li><h3>Clearing tracks</h3><p>Attackers hide their activity. Testers study this so defenders can detect it, and remove anything they left behind.</p></li>
-</ol>
-<div class="shots"><figure><a href="assets/img/cyber/03-phases-cycle.jpg" target="_blank" rel="noopener"><img src="assets/img/cyber/03-phases-cycle.jpg" width="660" height="495" alt="Cycle diagram of the five phases of ethical hacking, from reconnaissance to clearing tracks" loading="lazy"></a><figcaption>The phases as a repeating cycle</figcaption></figure><figure><a href="assets/img/cyber/01-five-phases.jpg" target="_blank" rel="noopener"><img src="assets/img/cyber/01-five-phases.jpg" width="1000" height="506" alt="Infographic of the five phases of ethical hacking from reconnaissance to clearing tracks" loading="lazy"></a><figcaption>The phases as an infographic<span class="credit">Source: Edoxi</span></figcaption></figure><figure><a href="assets/img/cyber/02-phase-one-reconnaissance.jpg" target="_blank" rel="noopener"><img src="assets/img/cyber/02-phase-one-reconnaissance.jpg" width="315" height="400" alt="Stacked list diagram of the five phases of hacking, starting with Phase 1 Reconnaissance" loading="lazy"></a><figcaption>The phases as a stacked list</figcaption></figure></div></div></details><details class="item"><summary><span>Kali Linux and Parrot Security OS</span><span class="badge">Study notes</span></summary><div class="item-body cy"><p>Both are Debian-based Linux systems built for security work. Their tools are grouped by task, such as Information Gathering, Vulnerability Analysis, Password Attacks and Reporting Tools, so each one is easy to find. I run Parrot OS in my lab. Parrot also bundles privacy tools such as AnonSurf, which routes traffic through Tor.</p>
-<div class="shots"><figure><a href="assets/img/cyber/01-parrot-security-os.jpg" target="_blank" rel="noopener"><img src="assets/img/cyber/01-parrot-security-os.jpg" width="595" height="336" alt="Parrot Security OS desktop with a Tor bandwidth monitor and the AnonSurf panel open" loading="lazy"></a><figcaption>Parrot Security OS with AnonSurf running</figcaption></figure><figure><a href="assets/img/cyber/02-kali-linux-desktop.jpg" target="_blank" rel="noopener"><img src="assets/img/cyber/02-kali-linux-desktop.jpg" width="1100" height="619" alt="Kali Linux desktop with the Applications menu listing tool categories such as Information Gathering and Password Attacks" loading="lazy"></a><figcaption>Kali Linux and its numbered tool categories</figcaption></figure><figure><a href="assets/img/cyber/03-parrot-tools-menu.jpg" target="_blank" rel="noopener"><img src="assets/img/cyber/03-parrot-tools-menu.jpg" width="800" height="601" alt="Parrot OS desktop with the Applications menu open on System Tools" loading="lazy"></a><figcaption>Parrot OS Applications menu</figcaption></figure></div></div></details><details class="item"><summary><span>Port scanning with Nmap</span><span class="badge">Study notes</span></summary><div class="item-body cy"><p>Every network service listens on a numbered port, such as 80 for web pages and 22 for SSH. A port scan checks which ports on a machine accept connections, which shows what services it runs and where it may be exposed. Nmap sends probes to the target and reads the replies.</p>
-<div class="shots"><figure><a href="assets/img/cyber/01-port-scanning-diagram.jpg" target="_blank" rel="noopener"><img src="assets/img/cyber/01-port-scanning-diagram.jpg" width="781" height="451" alt="Diagram of one computer port scanning three remote computers through the internet with Nmap" loading="lazy"></a><figcaption>One scanner, many targets<span class="credit">Source: GeeksforGeeks</span></figcaption></figure><figure><a href="assets/img/cyber/02-port-scanning-nmap.jpg" target="_blank" rel="noopener"><img src="assets/img/cyber/02-port-scanning-nmap.jpg" width="1100" height="619" alt="Diagram titled Port Scanning (nmap) showing one scanner reaching the ports of three computers across the internet" loading="lazy"></a><figcaption>Nmap probes the ports of each target</figcaption></figure></div>
-<h3 class="sub">What a TCP connect scan sees</h3>
-<p>The connect scan (<code>nmap -sT</code>) tries a full TCP handshake with each port, and the reply tells Nmap the port state. I used it in my own lab scan, shown in the first item.</p>
-<div class="big"><figure><a href="assets/img/cyber/03-tcp-connect-scan.jpg" target="_blank" rel="noopener"><img src="assets/img/cyber/03-tcp-connect-scan.jpg" width="1024" height="530" alt="TCP connect scan diagram: an open port answers SYN with SYN/ACK, a closed port answers with RST, and a filtered port does not answer" loading="lazy"></a><figcaption>TCP connect scan: how open, closed and filtered ports respond</figcaption></figure></div>
-<div class="tbl"><table>
-<caption>Port states in a TCP connect scan</caption>
-<thead><tr><th scope="col">State</th><th scope="col">What Nmap sees</th><th scope="col">What it means</th></tr></thead>
-<tbody>
-<tr><td>Open</td><td>SYN, then SYN/ACK, then ACK</td><td>The handshake completes, so a service is listening.</td></tr>
-<tr><td>Closed</td><td>SYN, then RST</td><td>The host replies that nothing is listening on that port.</td></tr>
-<tr><td>Filtered</td><td>SYN, then no reply</td><td>A firewall is probably dropping the probe, so Nmap cannot tell.</td></tr>
-</tbody></table></div></div></details><details class="item"><summary><span>Reading Nmap results</span><span class="badge">Study notes</span></summary><div class="item-body cy"><p>The same tool gives very different output depending on the options. These examples show a default scan, a full-range scan and an aggressive scan.</p>
-<div class="shots"><figure><a href="assets/img/cyber/01-scan-open-ports.jpg" target="_blank" rel="noopener"><img src="assets/img/cyber/01-scan-open-ports.jpg" width="729" height="725" alt="Terminal output of a default Nmap scan listing 23 open ports and 977 closed ports" loading="lazy"></a><figcaption>Default scan of a machine at 192.168.1.7: 23 open ports, 977 closed<span class="credit">Source: Techofide</span></figcaption></figure><figure><a href="assets/img/cyber/02-scan-all-ports.jpg" target="_blank" rel="noopener"><img src="assets/img/cyber/02-scan-all-ports.jpg" width="768" height="240" alt="Terminal output of nmap -p- scanme.nmap.org showing four open ports out of 65,535" loading="lazy"></a><figcaption><code>nmap -p-</code> against scanme.nmap.org: 4 open ports in about 15 minutes<span class="credit">Source: phoenixNAP</span></figcaption></figure><figure><a href="assets/img/cyber/03-zenmap-output.jpg" target="_blank" rel="noopener"><img src="assets/img/cyber/03-zenmap-output.jpg" width="640" height="480" alt="Zenmap output of an aggressive scan showing OS detection, traceroute, scripts and a closed SMTP port" loading="lazy"></a><figcaption>Zenmap running <code>nmap -T4 -A -v</code></figcaption></figure></div>
-<div class="tbl"><table>
-<caption>Common Nmap commands</caption>
-<thead><tr><th scope="col">Command</th><th scope="col">What it does</th></tr></thead>
-<tbody>
-<tr><td><code>nmap &lt;target&gt;</code></td><td>Scans the 1,000 most common TCP ports.</td></tr>
-<tr><td><code>nmap -sT &lt;target&gt;</code></td><td>TCP connect scan: completes the full handshake and needs no special privileges.</td></tr>
-<tr><td><code>nmap -p- &lt;target&gt;</code></td><td>Scans all 65,535 ports. Thorough but slow: the example above took about 15 minutes.</td></tr>
-<tr><td><code>nmap -T4 -A -v &lt;target&gt;</code></td><td>Faster timing, plus OS and version detection, default scripts and traceroute, with verbose output.</td></tr>
-</tbody></table></div>
-<p class="callout"><strong>Scan only what you are allowed to scan.</strong> Scanning computers without permission can be illegal. I practise in my own isolated virtual lab, and public practice hosts such as scanme.nmap.org exist for this purpose.</p></div></details></div>
-</article><article class="project" id="solar-inverter-installation"><div class="gallery"><figure><a href="assets/img/solar-installation-photo.jpg" target="_blank" rel="noopener"><img src="assets/img/solar-installation-photo.jpg" width="515" height="388" alt="A technician wiring a solar charge controller mounted on a wall" loading="lazy"></a><figcaption>Wiring a solar charge controller on site</figcaption></figure><figure><a href="assets/img/solar-hybrid-diagram.jpg" target="_blank" rel="noopener"><img src="assets/img/solar-hybrid-diagram.jpg" width="494" height="619" alt="Diagram of a hybrid inverter connected to the grid, solar panels, battery and a house" loading="lazy"></a><figcaption>Hybrid inverter layout: grid, panels, battery and house</figcaption></figure><figure><a href="assets/img/solar-offgrid-diagram.jpg" target="_blank" rel="noopener"><img src="assets/img/solar-offgrid-diagram.jpg" width="335" height="597" alt="Diagram of an off-grid system with six 350 watt panels, MPPT controller, inverter and battery bank" loading="lazy"></a><figcaption>Off-grid layout: six 350 W panels, MPPT controller and battery bank</figcaption></figure></div><div><h2>Solar inverter installation: principles and guidelines</h2><p>A 39-page project report on installing solar inverter systems safely and efficiently. It covers installation guidelines, safety precautions, commissioning procedures, maintenance and troubleshooting, and was written for the Department of Computer Science, Ambrose Alli University, Ekpoma.</p><p>The layouts compare hybrid and off-grid designs, and the photo shows hands-on installation work.</p><ul class="tags"><li>Solar energy</li><li>Hybrid inverter</li><li>Off-grid</li><li>Safety</li><li>Troubleshooting</li></ul><div class="links"><a class="btn dark" href="assets/docs/solar-report.pdf" target="_blank" rel="noopener">Read the project report (PDF)</a></div></div></article><article class="project" id="portfolio-and-planner"><div class="gallery wide"><figure><a href="assets/img/portfolio-screenshot.png" target="_blank" rel="noopener"><img src="assets/img/portfolio-screenshot.png" width="1919" height="912" alt="Screenshot of the first version of the portfolio home page" loading="lazy"></a><figcaption>First version of the home page</figcaption></figure><figure><a href="assets/img/planner-screenshot.png" target="_blank" rel="noopener"><img src="assets/img/planner-screenshot.png" width="1918" height="910" alt="Screenshot of the first version of the academic planner with a task list" loading="lazy"></a><figcaption>First version of the academic planner</figcaption></figure></div><div><h2>Student portfolio and academic planner</h2><p>The website you are on: a responsive multi-page portfolio built with semantic HTML5, an external CSS stylesheet (Flexbox and Grid) and vanilla JavaScript. It includes an academic planner that adds, completes and deletes tasks, and a contact form with JavaScript validation that delivers messages to my inbox through Formspree.</p><ul class="tags"><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Formspree</li><li>GitHub</li></ul><div class="links"><a class="btn dark" href="https://github.com/hassanjoseph-dev/Joseph_Portfolio" target="_blank" rel="noopener">View source on GitHub</a><a class="btn line" href="planner.html">Try the planner</a></div></div></article></div></section>
-</main>
-<footer class="site-footer">
-<div class="wrap foot">
-<p>&copy; <span id="year">2026</span> Hassan Ore-Oluwa Joseph. MIVA Open University.</p>
-<ul><li><a href="https://github.com/hassanjoseph-dev" target="_blank" rel="noopener">GitHub</a></li><li><a href="mailto:h.ore-oluwa5593@miva.edu.ng">Email</a></li><li><a href="contact.html">Contact</a></li></ul>
-</div>
-</footer>
-<script src="js/script.js"></script>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html">Hassan Joseph<b>.</b></a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Toggle menu">
+        <span class="bars" aria-hidden="true"></span>
+      </button>
+
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html" aria-current="page">Projects</a></li>
+        <li><a href="planner.html">Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <header class="page-head">
+      <div class="wrap">
+        <h1>My projects</h1>
+        <p>Hands-on work across cybersecurity, renewable energy and web development.</p>
+
+        <div class="filters" role="group" aria-label="Filter projects">
+          <button class="on" type="button" data-f="all">All</button>
+          <button type="button" data-f="security">Cybersecurity</button>
+          <button type="button" data-f="energy">Solar energy</button>
+          <button type="button" data-f="web">Web</button>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="wrap">
+
+        <article class="hub" id="ethical-hacking">
+          <div class="hub-head">
+            <div>
+              <h2>Ethical hacking</h2>
+              <p>Everything I have done under ethical hacking, in one container: the hands-on scanning lab I ran myself, and the study notes behind it. Open any item to see the details.</p>
+
+              <ul class="tags">
+                <li>Nmap</li>
+                <li>hping3</li>
+                <li>theHarvester</li>
+                <li>Google dorking</li>
+                <li>Kali Linux</li>
+                <li>Parrot OS</li>
+                <li>VMware</li>
+              </ul>
+
+              <div class="links">
+                <a class="btn dark" href="assets/docs/google-hacking-lab.pdf" target="_blank" rel="noopener">Read the lab report (PDF)</a>
+              </div>
+            </div>
+
+            <img class="hub-img" src="assets/img/cyber/02-security-analyst-at-work.jpg" width="678" height="452" alt="A security analyst working across two laptops and a monitor showing code and dashboards">
+          </div>
+
+          <p class="callout">The first item is my own lab work. The other items are study notes that use reference images from public sources, credited where the source is visible.</p>
+
+          <div class="accordion">
+
+            <details class="item" open>
+              <summary>
+                <span>Lab: reconnaissance and network scanning</span>
+                <span class="badge own">My own work</span>
+              </summary>
+
+              <div class="item-body">
+                <p>Hands-on labs from my ethical hacking training, run on virtual machines in an isolated lab: a Parrot OS attacker against Windows 10 and Windows Server 2016 targets. I gathered information with advanced Google dorking and theHarvester, mapped the target with an Nmap TCP connect scan, and crafted ACK probes with hping3.</p>
+                <p>The full lab report also covers FTP search engines, Netcraft, Sherlock, deep and dark web searching, passive OS footprinting, and OS discovery with the Nmap script engine and Uniscan.</p>
+
+                <div class="gallery">
+                  <figure>
+                    <a href="assets/img/lab-google-dorking.png" target="_blank" rel="noopener">
+                      <img src="assets/img/lab-google-dorking.png" width="858" height="750" alt="Google search using the intitle and site operators against eccouncil.org" loading="lazy">
+                    </a>
+                    <figcaption>Google dorking with intitle: and site: operators</figcaption>
+                  </figure>
+
+                  <figure>
+                    <a href="assets/img/lab-theharvester.png" target="_blank" rel="noopener">
+                      <img src="assets/img/lab-theharvester.png" width="638" height="627" alt="theHarvester 4.0.3 banner in a Parrot OS terminal" loading="lazy">
+                    </a>
+                    <figcaption>theHarvester 4.0.3 running on Parrot OS</figcaption>
+                  </figure>
+
+                  <figure>
+                    <a href="assets/img/lab-nmap-scan.png" target="_blank" rel="noopener">
+                      <img src="assets/img/lab-nmap-scan.png" width="805" height="775" alt="Zenmap showing a TCP connect scan with a list of open ports on 10.10.10.16" loading="lazy">
+                    </a>
+                    <figcaption>Nmap TCP connect scan listing open ports</figcaption>
+                  </figure>
+
+                  <figure>
+                    <a href="assets/img/lab-hping3.png" target="_blank" rel="noopener">
+                      <img src="assets/img/lab-hping3.png" width="705" height="577" alt="Parrot terminal showing hping3 ACK probes to port 80 with five replies" loading="lazy">
+                    </a>
+                    <figcaption>hping3 ACK probes against port 80</figcaption>
+                  </figure>
+                </div>
+              </div>
+            </details>
+
+            <details class="item">
+              <summary>
+                <span>My learning roadmap</span>
+                <span class="badge">Study notes</span>
+              </summary>
+
+              <div class="item-body cy">
+                <div class="split">
+                  <div>
+                    <p>I am building security skills from the foundations up, because every later step depends on the one before it.</p>
+
+                    <ol class="steps">
+                      <li>
+                        <h3>Networking</h3>
+                        <p>How devices find and talk to each other: IP addresses, protocols and ports.</p>
+                      </li>
+                      <li>
+                        <h3>Cybersecurity fundamentals</h3>
+                        <p>Confidentiality, integrity and availability, common threats, and how defences work.</p>
+                      </li>
+                      <li>
+                        <h3>Ethical hacking</h3>
+                        <p>Testing systems with permission to find weaknesses before attackers do. This is the stage I am training in now.</p>
+                      </li>
+                      <li>
+                        <h3>Advanced security specialisations</h3>
+                        <p>Deeper tracks such as penetration testing, digital forensics and security operations.</p>
+                      </li>
+                    </ol>
+                  </div>
+
+                  <figure>
+                    <a href="assets/img/cyber/01-learning-roadmap.jpg" target="_blank" rel="noopener">
+                      <img src="assets/img/cyber/01-learning-roadmap.jpg" width="683" height="1024" alt="Roadmap flowchart: Networking, then Cybersecurity Fundamentals, then Ethical Hacking, then Advanced Security Specializations" loading="lazy">
+                    </a>
+                    <figcaption>Roadmap from networking to advanced specialisations</figcaption>
+                  </figure>
+                </div>
+              </div>
+            </details>
+
+            <details class="item">
+              <summary>
+                <span>The five phases of ethical hacking</span>
+                <span class="badge">Study notes</span>
+              </summary>
+
+              <div class="item-body cy">
+                <p>A professional security test follows the same order an attacker would, so the tester finds the weaknesses an attacker would find. Each phase feeds the next, and the cycle repeats as systems change.</p>
+
+                <ol class="phases">
+                  <li>
+                    <h3>Reconnaissance</h3>
+                    <p>Gather information about the target from public sources or by probing it directly. I practised this with Google dorking and theHarvester.</p>
+                  </li>
+                  <li>
+                    <h3>Scanning and enumeration</h3>
+                    <p>Find live hosts, open ports and the services behind them. I practised this with Nmap and hping3.</p>
+                  </li>
+                  <li>
+                    <h3>Gaining access</h3>
+                    <p>Use a weakness found in the scan to enter the system, only inside the agreed scope, to prove the risk is real.</p>
+                  </li>
+                  <li>
+                    <h3>Maintaining access</h3>
+                    <p>Check whether a foothold could last, so defenders know what to look for.</p>
+                  </li>
+                  <li>
+                    <h3>Clearing tracks</h3>
+                    <p>Attackers hide their activity. Testers study this so defenders can detect it, and remove anything they left behind.</p>
+                  </li>
+                </ol>
+
+                <div class="shots">
+                  <figure>
+                    <a href="assets/img/cyber/03-phases-cycle.jpg" target="_blank" rel="noopener">
+                      <img src="assets/img/cyber/03-phases-cycle.jpg" width="660" height="495" alt="Cycle diagram of the five phases of ethical hacking, from reconnaissance to clearing tracks" loading="lazy">
+                    </a>
+                    <figcaption>The phases as a repeating cycle</figcaption>
+                  </figure>
+
+                  <figure>
+                    <a href="assets/img/cyber/01-five-phases.jpg" target="_blank" rel="noopener">
+                      <img src="assets/img/cyber/01-five-phases.jpg" width="1000" height="506" alt="Infographic of the five phases of ethical hacking from reconnaissance to clearing tracks" loading="lazy">
+                    </a>
+                    <figcaption>The phases as an infographic<span class="credit">Source: Edoxi</span></figcaption>
+                  </figure>
+
+                  <figure>
+                    <a href="assets/img/cyber/02-phase-one-reconnaissance.jpg" target="_blank" rel="noopener">
+                      <img src="assets/img/cyber/02-phase-one-reconnaissance.jpg" width="315" height="400" alt="Stacked list diagram of the five phases of hacking, starting with Phase 1 Reconnaissance" loading="lazy">
+                    </a>
+                    <figcaption>The phases as a stacked list</figcaption>
+                  </figure>
+                </div>
+              </div>
+            </details>
+
+            <details class="item">
+              <summary>
+                <span>Kali Linux and Parrot Security OS</span>
+                <span class="badge">Study notes</span>
+              </summary>
+
+              <div class="item-body cy">
+                <p>Both are Debian-based Linux systems built for security work. Their tools are grouped by task, such as Information Gathering, Vulnerability Analysis, Password Attacks and Reporting Tools, so each one is easy to find. I run Parrot OS in my lab. Parrot also bundles privacy tools such as AnonSurf, which routes traffic through Tor.</p>
+
+                <div class="shots">
+                  <figure>
+                    <a href="assets/img/cyber/01-parrot-security-os.jpg" target="_blank" rel="noopener">
+                      <img src="assets/img/cyber/01-parrot-security-os.jpg" width="595" height="336" alt="Parrot Security OS desktop with a Tor bandwidth monitor and the AnonSurf panel open" loading="lazy">
+                    </a>
+                    <figcaption>Parrot Security OS with AnonSurf running</figcaption>
+                  </figure>
+
+                  <figure>
+                    <a href="assets/img/cyber/02-kali-linux-desktop.jpg" target="_blank" rel="noopener">
+                      <img src="assets/img/cyber/02-kali-linux-desktop.jpg" width="1100" height="619" alt="Kali Linux desktop with the Applications menu listing tool categories such as Information Gathering and Password Attacks" loading="lazy">
+                    </a>
+                    <figcaption>Kali Linux and its numbered tool categories</figcaption>
+                  </figure>
+
+                  <figure>
+                    <a href="assets/img/cyber/03-parrot-tools-menu.jpg" target="_blank" rel="noopener">
+                      <img src="assets/img/cyber/03-parrot-tools-menu.jpg" width="800" height="601" alt="Parrot OS desktop with the Applications menu open on System Tools" loading="lazy">
+                    </a>
+                    <figcaption>Parrot OS Applications menu</figcaption>
+                  </figure>
+                </div>
+              </div>
+            </details>
+
+            <details class="item">
+              <summary>
+                <span>Port scanning with Nmap</span>
+                <span class="badge">Study notes</span>
+              </summary>
+
+              <div class="item-body cy">
+                <p>Every network service listens on a numbered port, such as 80 for web pages and 22 for SSH. A port scan checks which ports on a machine accept connections, which shows what services it runs and where it may be exposed. Nmap sends probes to the target and reads the replies.</p>
+
+                <div class="shots">
+                  <figure>
+                    <a href="assets/img/cyber/01-port-scanning-diagram.jpg" target="_blank" rel="noopener">
+                      <img src="assets/img/cyber/01-port-scanning-diagram.jpg" width="781" height="451" alt="Diagram of one computer port scanning three remote computers through the internet with Nmap" loading="lazy">
+                    </a>
+                    <figcaption>One scanner, many targets<span class="credit">Source: GeeksforGeeks</span></figcaption>
+                  </figure>
+
+                  <figure>
+                    <a href="assets/img/cyber/02-port-scanning-nmap.jpg" target="_blank" rel="noopener">
+                      <img src="assets/img/cyber/02-port-scanning-nmap.jpg" width="1100" height="619" alt="Diagram titled Port Scanning (nmap) showing one scanner reaching the ports of three computers across the internet" loading="lazy">
+                    </a>
+                    <figcaption>Nmap probes the ports of each target</figcaption>
+                  </figure>
+                </div>
+
+                <h3 class="sub">What a TCP connect scan sees</h3>
+                <p>The connect scan (<code>nmap -sT</code>) tries a full TCP handshake with each port, and the reply tells Nmap the port state. I used it in my own lab scan, shown in the first item.</p>
+
+                <div class="big">
+                  <figure>
+                    <a href="assets/img/cyber/03-tcp-connect-scan.jpg" target="_blank" rel="noopener">
+                      <img src="assets/img/cyber/03-tcp-connect-scan.jpg" width="1024" height="530" alt="TCP connect scan diagram: an open port answers SYN with SYN/ACK, a closed port answers with RST, and a filtered port does not answer" loading="lazy">
+                    </a>
+                    <figcaption>TCP connect scan: how open, closed and filtered ports respond</figcaption>
+                  </figure>
+                </div>
+
+                <div class="tbl">
+                  <table>
+                    <caption>Port states in a TCP connect scan</caption>
+                    <thead>
+                      <tr>
+                        <th scope="col">State</th>
+                        <th scope="col">What Nmap sees</th>
+                        <th scope="col">What it means</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Open</td>
+                        <td>SYN, then SYN/ACK, then ACK</td>
+                        <td>The handshake completes, so a service is listening.</td>
+                      </tr>
+                      <tr>
+                        <td>Closed</td>
+                        <td>SYN, then RST</td>
+                        <td>The host replies that nothing is listening on that port.</td>
+                      </tr>
+                      <tr>
+                        <td>Filtered</td>
+                        <td>SYN, then no reply</td>
+                        <td>A firewall is probably dropping the probe, so Nmap cannot tell.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </details>
+
+            <details class="item">
+              <summary>
+                <span>Reading Nmap results</span>
+                <span class="badge">Study notes</span>
+              </summary>
+
+              <div class="item-body cy">
+                <p>The same tool gives very different output depending on the options. These examples show a default scan, a full-range scan and an aggressive scan.</p>
+
+                <div class="shots">
+                  <figure>
+                    <a href="assets/img/cyber/01-scan-open-ports.jpg" target="_blank" rel="noopener">
+                      <img src="assets/img/cyber/01-scan-open-ports.jpg" width="729" height="725" alt="Terminal output of a default Nmap scan listing 23 open ports and 977 closed ports" loading="lazy">
+                    </a>
+                    <figcaption>Default scan of a machine at 192.168.1.7: 23 open ports, 977 closed<span class="credit">Source: Techofide</span></figcaption>
+                  </figure>
+
+                  <figure>
+                    <a href="assets/img/cyber/02-scan-all-ports.jpg" target="_blank" rel="noopener">
+                      <img src="assets/img/cyber/02-scan-all-ports.jpg" width="768" height="240" alt="Terminal output of nmap -p- scanme.nmap.org showing four open ports out of 65,535" loading="lazy">
+                    </a>
+                    <figcaption><code>nmap -p-</code> against scanme.nmap.org: 4 open ports in about 15 minutes<span class="credit">Source: phoenixNAP</span></figcaption>
+                  </figure>
+
+                  <figure>
+                    <a href="assets/img/cyber/03-zenmap-output.jpg" target="_blank" rel="noopener">
+                      <img src="assets/img/cyber/03-zenmap-output.jpg" width="640" height="480" alt="Zenmap output of an aggressive scan showing OS detection, traceroute, scripts and a closed SMTP port" loading="lazy">
+                    </a>
+                    <figcaption>Zenmap running <code>nmap -T4 -A -v</code></figcaption>
+                  </figure>
+                </div>
+
+                <div class="tbl">
+                  <table>
+                    <caption>Common Nmap commands</caption>
+                    <thead>
+                      <tr>
+                        <th scope="col">Command</th>
+                        <th scope="col">What it does</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><code>nmap &lt;target&gt;</code></td>
+                        <td>Scans the 1,000 most common TCP ports.</td>
+                      </tr>
+                      <tr>
+                        <td><code>nmap -sT &lt;target&gt;</code></td>
+                        <td>TCP connect scan: completes the full handshake and needs no special privileges.</td>
+                      </tr>
+                      <tr>
+                        <td><code>nmap -p- &lt;target&gt;</code></td>
+                        <td>Scans all 65,535 ports. Thorough but slow: the example above took about 15 minutes.</td>
+                      </tr>
+                      <tr>
+                        <td><code>nmap -T4 -A -v &lt;target&gt;</code></td>
+                        <td>Faster timing, plus OS and version detection, default scripts and traceroute, with verbose output.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <p class="callout"><strong>Scan only what you are allowed to scan.</strong> Scanning computers without permission can be illegal. I practise in my own isolated virtual lab, and public practice hosts such as scanme.nmap.org exist for this purpose.</p>
+              </div>
+            </details>
+
+          </div>
+        </article>
+
+        <article class="project" id="solar-inverter-installation">
+          <div class="gallery">
+            <figure>
+              <a href="assets/img/solar-installation-photo.jpg" target="_blank" rel="noopener">
+                <img src="assets/img/solar-installation-photo.jpg" width="515" height="388" alt="A technician wiring a solar charge controller mounted on a wall" loading="lazy">
+              </a>
+              <figcaption>Wiring a solar charge controller on site</figcaption>
+            </figure>
+
+            <figure>
+              <a href="assets/img/solar-hybrid-diagram.jpg" target="_blank" rel="noopener">
+                <img src="assets/img/solar-hybrid-diagram.jpg" width="494" height="619" alt="Diagram of a hybrid inverter connected to the grid, solar panels, battery and a house" loading="lazy">
+              </a>
+              <figcaption>Hybrid inverter layout: grid, panels, battery and house</figcaption>
+            </figure>
+
+            <figure>
+              <a href="assets/img/solar-offgrid-diagram.jpg" target="_blank" rel="noopener">
+                <img src="assets/img/solar-offgrid-diagram.jpg" width="335" height="597" alt="Diagram of an off-grid system with six 350 watt panels, MPPT controller, inverter and battery bank" loading="lazy">
+              </a>
+              <figcaption>Off-grid layout: six 350 W panels, MPPT controller and battery bank</figcaption>
+            </figure>
+          </div>
+
+          <div>
+            <h2>Solar inverter installation: principles and guidelines</h2>
+            <p>A 39-page project report on installing solar inverter systems safely and efficiently. It covers installation guidelines, safety precautions, commissioning procedures, maintenance and troubleshooting, and was written for the Department of Computer Science, Ambrose Alli University, Ekpoma.</p>
+            <p>The layouts compare hybrid and off-grid designs, and the photo shows hands-on installation work.</p>
+
+            <ul class="tags">
+              <li>Solar energy</li>
+              <li>Hybrid inverter</li>
+              <li>Off-grid</li>
+              <li>Safety</li>
+              <li>Troubleshooting</li>
+            </ul>
+
+            <div class="links">
+              <a class="btn dark" href="assets/docs/solar-report.pdf" target="_blank" rel="noopener">Read the project report (PDF)</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project" id="portfolio-and-planner">
+          <div class="gallery wide">
+            <figure>
+              <a href="assets/img/portfolio-screenshot.png" target="_blank" rel="noopener">
+                <img src="assets/img/portfolio-screenshot.png" width="1919" height="912" alt="Screenshot of the first version of the portfolio home page" loading="lazy">
+              </a>
+              <figcaption>First version of the home page</figcaption>
+            </figure>
+
+            <figure>
+              <a href="assets/img/planner-screenshot.png" target="_blank" rel="noopener">
+                <img src="assets/img/planner-screenshot.png" width="1918" height="910" alt="Screenshot of the first version of the academic planner with a task list" loading="lazy">
+              </a>
+              <figcaption>First version of the academic planner</figcaption>
+            </figure>
+          </div>
+
+          <div>
+            <h2>Student portfolio and academic planner</h2>
+            <p>The website you are on: a responsive multi-page portfolio built with semantic HTML5, an external CSS stylesheet (Flexbox and Grid) and vanilla JavaScript. It includes an academic planner that adds, completes and deletes tasks, and a contact form with JavaScript validation that delivers messages to my inbox through Formspree.</p>
+
+            <ul class="tags">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>Formspree</li>
+              <li>GitHub</li>
+            </ul>
+
+            <div class="links">
+              <a class="btn dark" href="https://github.com/hassanjoseph-dev/Joseph_Portfolio" target="_blank" rel="noopener">View source on GitHub</a>
+              <a class="btn line" href="planner.html">Try the planner</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap foot">
+      <p>&copy; <span id="year">2026</span> Hassan Ore-Oluwa Joseph. MIVA Open University.</p>
+      <ul>
+        <li><a href="https://github.com/hassanjoseph-dev" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="mailto:h.ore-oluwa5593@miva.edu.ng">Email</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
+
 </html>
